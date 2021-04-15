@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  background: #221D23;
+  font-family: 'Source Code Pro', source-code-pro;
+  font-weight: 500;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  background: #FFFFFF;
+  margin: auto;
+}
+
+h1::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+  color: white;
+  font-size: 40px;
+}
+
+h3 {
+  color: white;
+  margin: auto;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  color: #00ab44;
+  text-align: center;
+  
+}
+
+.logo {
+  float: center;
+}
+
+nav {
+  float: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 50px;
+  padding-top: 10px;
+  position: relative;
+}
+
+nav a {
+  color: #00ab44;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #53bb84;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #53bb84;
+  position: absolute;
+  bottom: 5;
+  width: 0%;
+  transition: all ease-in-out 300ms;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+p {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+img {
+  border: 5px solid #53bb84;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 250px;
+  margin-top: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
